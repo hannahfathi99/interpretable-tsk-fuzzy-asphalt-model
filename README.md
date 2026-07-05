@@ -10,7 +10,7 @@ This repository presents a complete implementation of a **Takagi–Sugeno–Kang
 
 The system is designed as an end-to-end **interpretable machine learning pipeline** for civil engineering applications, combining fuzzy logic, clustering-based rule generation, and regression learning.
 
-The implementation is fully developed in Python and avoids black-box modeling in favor of **transparent, rule-based predictive modeling**.
+Unlike conventional black-box models, this framework prioritizes **transparency, interpretability, and rule-based reasoning**.
 
 ---
 
@@ -27,29 +27,91 @@ using 10 mix design and volumetric properties.
 
 ---
 
-## Input Features
+## Research Motivation
 
-The model uses the following engineering features:
+Most machine learning models used for asphalt performance prediction rely on black-box approaches such as Artificial Neural Networks (ANN), Support Vector Regression (SVR), and Random Forests. While these methods often achieve high predictive accuracy, they provide limited interpretability and fail to explicitly capture the underlying physical relationships in pavement engineering.
 
-### Binder Properties
-- Viscosity (η)
-- Asphalt Content (%Pb)
-- Effective Asphalt Content (Pbe)
+In contrast, this work develops an **interpretable fuzzy regression framework** based on Takagi–Sugeno–Kang (TSK) fuzzy systems.
 
-### Volumetric Properties
-- Maximum Theoretical Specific Gravity (Gmm)
-- Unit Weight
-- Air Voids (Va)
+This enables:
 
-### Aggregate Gradation
-- P200 (fines content)
-- P4 (coarse skeleton indicator)
-- P38 (intermediate aggregate fraction)
-- P34 (large aggregate fraction)
+- Transparent rule extraction from data-driven clusters  
+- Human-readable IF–THEN decision structures  
+- Local linear interpretability within fuzzy regions  
+- Strong alignment with engineering domain knowledge  
 
 ---
 
-## Methodology
+## Engineering Relevance
+
+Accurate prediction of asphalt mixture performance is essential in pavement engineering and infrastructure design.
+
+This work contributes to:
+
+- Improving road safety and structural durability  
+- Optimizing asphalt mix composition during design  
+- Reducing experimental laboratory cost and time  
+- Supporting data-driven civil engineering decision systems  
+- Enhancing sustainability in road construction through predictive modeling  
+
+---
+
+## Methodological Contribution
+
+This implementation introduces a fully modular TSK fuzzy inference pipeline with the following contributions:
+
+- Output-specific feature selection for multi-target interpretability  
+- Fuzzy C-Means (FCM) based adaptive rule generation  
+- Cross-validation-based optimization of rule complexity  
+- Hybrid fuzzy-regression learning with first-order consequents  
+- Fully transparent inference structure without black-box optimization  
+
+Unlike standard ANFIS implementations, this system explicitly controls:
+
+- Rule structure  
+- Feature subsets per output  
+- Model complexity via rule tuning  
+
+This makes the framework suitable for both prediction and engineering knowledge extraction.
+
+---
+
+## Baseline Comparison (Recommended Extension)
+
+This framework can be compared against standard machine learning regression models such as:
+
+- Artificial Neural Networks (ANN)  
+- Support Vector Regression (SVR)  
+- Random Forest Regression (RF)  
+
+This comparison highlights the trade-off between:
+
+- **Accuracy (black-box models)**  
+- **Interpretability (TSK fuzzy system)**  
+
+---
+
+## Input Features
+
+### Binder Properties
+- Viscosity (η)  
+- Asphalt Content (%Pb)  
+- Effective Asphalt Content (Pbe)  
+
+### Volumetric Properties
+- Maximum Theoretical Specific Gravity (Gmm)  
+- Unit Weight  
+- Air Voids (Va)  
+
+### Aggregate Gradation
+- P200 (fines content)  
+- P4 (coarse skeleton indicator)  
+- P38 (intermediate aggregate fraction)  
+- P34 (large aggregate fraction)  
+
+---
+
+## Methodology Pipeline
 
 The system follows a structured fuzzy modeling pipeline:
 
