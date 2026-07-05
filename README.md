@@ -267,8 +267,7 @@ Fuzzy-TSK-Asphalt-System/
 │   └── Fuzzy_project_2.ipynb
 │
 ├── reports/
-│   ├── Project2-report.pdf
-│   └── Prj2-dataset description.pdf
+│   └── Project2-report.pdf
 │
 ├── outputs/
 │   └── figures/
