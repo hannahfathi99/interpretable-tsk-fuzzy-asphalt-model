@@ -384,6 +384,24 @@ Research Interests:
 
 ---
 
+## Research Timeline (Fall 2025)
+
+During Fall 2025, this research focused on the development of an interpretable fuzzy regression framework for engineering-based prediction tasks, specifically targeting asphalt mixture performance modeling.
+
+The objective was to construct a transparent learning system capable of capturing nonlinear relationships in material properties while maintaining explicit rule-based interpretability.
+
+Key research outcomes include:
+
+Design and implementation of a first-order Takagi–Sugeno–Kang (TSK) fuzzy inference system
+Data-driven rule generation using fuzzy C-means clustering
+Gaussian membership function modeling for smooth fuzzy transitions
+Feature selection tailored to individual output variables
+Cross-validation-based optimization of model complexity and rule structure
+
+This work prioritizes engineering interpretability, structured fuzzy reasoning, and transparent predictive modeling, making it suitable for decision-support applications in civil engineering systems.
+
+---
+
 ## License
 
 This project is released under the **MIT License**.
