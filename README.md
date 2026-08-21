@@ -370,10 +370,6 @@ Hannah Fathi (Fall 2025). TSK Fuzzy Inference System for Asphalt Performance Pre
 
 **Hannah Fathi**
 
-M.Sc. Artificial Intelligence
-
-Shiraz University
-
 Research Interests:
 
 * Explainable AI
